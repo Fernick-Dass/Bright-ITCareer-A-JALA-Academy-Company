@@ -1,0 +1,47 @@
+1. Single line comment
+/*
+   Multiline comment
+*/
+
+2. Array of fruits
+let fruits = ['Apple', 'Orange', 'Banana', 'Grapes'];
+
+// Function to sort fruits in descending order
+function sortFruits() {
+    fruits.sort().reverse();
+    console.log(fruits);
+}
+
+3. Program with FOR/IN loop
+let person = {
+    firstname: 'John',
+    lastname: 'Doe'
+};
+
+for (let key in person) {
+    console.log(key + ': ' + person[key]);
+}
+
+4. Accessing properties of the person object
+console.log(person.firstname);
+console.log(person['lastname']);
+
+5. Variable hoisting
+console.log(myVar); // Output: undefined
+var myVar = 10;
+
+6. Strict mode
+'use strict';
+try {
+    someVar = 20; // Throws error because someVar is not declared
+} catch (error) {
+    console.error(error.message);
+}
+
+7. JavaScript differs from Java in several ways:
+ - JavaScript is a scripting language primarily used for web development, while Java is a general-purpose programming language.
+ - JavaScript is interpreted and runs in the browser, while Java is compiled and runs on the Java Virtual Machine (JVM).
+ - JavaScript has dynamic typing, whereas Java has static typing.
+ - JavaScript is prototype-based, while Java is class-based.
+ - JavaScript has automatic memory management (garbage collection), while in Java, memory management is handled manually.
+ - JavaScript is often used for client-side scripting, whereas Java is used for both client-side and server-side applications.

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Compatibility</title>
+    <style>
+        /* 1. Table with different table-layout */
+        .table-fixed {
+            table-layout: fixed;
+        }
+        .table-none {
+            table-layout: none;
+        }
+
+        /* 2. Changing list-style-type */
+        .custom-list {
+            list-style-type: circle;
+        }
+
+        /* 3. Grid with different display types */
+        .grid-example {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .flex-example {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* 4. Hero image */
+        .hero-image {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            height: 400px;
+            text-align: center;
+            color: white;
+            padding-top: 200px;
+        }
+
+        /* 5. Viewport, media queries, image, and video */
+        @media screen and (max-width: 600px) {
+            .grid-example {
+                grid-template-columns: auto;
+            }
+            .flex-example {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Table with different table-layout -->
+    <table class="table-fixed">
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+    </table>
+    <br>
+    <table class="table-none">
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+    </table>
+
+    <!-- 2. Changing list-style-type -->
+    <ul class="custom-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- 3. Grid with different display types -->
+    <div class="grid-example">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <div class="flex-example">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <!-- 4. Hero image -->
+    <div class="hero-image">
+        <h1>Hero Image</h1>
+    </div>
+
+    <!-- 5. Viewport, media queries, image, and video -->
+    <img src="image.jpg" alt="Image" style="max-width: 100%;">
+    <br><br>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+
+ additional questions:
+
+1.Understand table structure?
+In HTML, tables are structured using <table>, <tr> (table row), <td> (table data/cell), and <th> (table header) elements. The <table> element is the container for the entire table. <tr> elements represent rows in the table. Inside each <tr>, <td> elements represent cells (data), while <th> elements represent header cells.
+2.Explain cell padding and cell spacing.
+Cell padding is the space between the content of a cell and its border. It can be set using the padding property in CSS or the cellpadding attribute in HTML.
+Cell spacing is the space between cells in a table. It can be set using the border-spacing property in CSS or the cellspacing attribute in HTML.
+3.What are form attributes?
+Form attributes are properties that can be added to HTML <form> elements to specify various behaviors and settings. Some common form attributes include action (specifies where to send form data), method (specifies how to send form data), enctype (specifies how form data should be encoded when submitted), target (specifies where to display the response after submitting the form), autocomplete (specifies whether form autofill is enabled), novalidate (specifies that form data should not be validated on submission), etc.
+
+
+
+
+
